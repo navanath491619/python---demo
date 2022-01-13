@@ -1,2 +1,2 @@
-# python---demo
+# python-demo
 training purpose
