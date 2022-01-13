@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title%}
+  View Page
+{% endblock %}
+
+
+{% block pageTitle%}
+  View User Details
+{% endblock %}
+
+{% block content%}
+
+<div>
+    <label>
+        <b>ID: </b> {{user[2]}}
+    </label>
+</div>
+<div>
+    <label>
+        <b>Name: </b> {{user[0]}}
+    </label>
+</div>
+<div>
+    <label>
+        <b>Email: </b> navanath@gamil.com
+    </label>
+</div>
+<div>
+    <label>
+        <b> phone: </b> 7517852331
+    </label>
+</div>
+<div>
+    <label>
+        <b>Gender: </b> Female
+    </label>
+</div>
+<a href="/users">All Users</a>
+  
+{% endblock %}

@@ -1,0 +1,19 @@
+<h1>All Users</h1>
+<a href="/users/create">Create New User</a> </br> </br>
+<table border="1"> 
+  <tr>
+    <th>Name</th>
+    <th>Email
+    <th>Actions</th>
+  </tr>
+  {%  for user in userDetails %}
+  <tr>
+      <td> {{user[0]}} </td>
+      <td> {{user[1]}} </td>
+      <td>
+        <a href="/users/{{user[2]}}">View</a>
+        <a href="/users/{{user[2]}}/edit">Edit</a>
+        <a href="/users/{{user[2]}}/delete">Delete</a>     
+    </tr>
+  {% endfor %}
+</table>

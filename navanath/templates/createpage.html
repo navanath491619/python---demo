@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Employee:: Create
+{% endblock %}
+
+{% block header %}
+    Employee Create
+{% endblock %}
+
+{% block content %}
+
+<div class="w3-container w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Create</h3>
+  <form action="" method="_blank">
+    <input class="w3-input w3-border" type="integer" name="employee_id" placeholder="Employee ID">
+    <input class="w3-input w3-section w3-border" type="text" name="name" placeholder="Name">
+    <input class="w3-input w3-section w3-border" type="integer" name="age" placeholder="Age">
+    <input class="w3-input w3-section w3-border" type="text" name="position" placeholder="Position">
+    <button class="w3-button w3-black w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> SUBMIT
+    </button>
+  </form>
+</div>
+{% endblock %}

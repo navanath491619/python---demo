@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title%}
+  All Users
+{% endblock %}
+
+
+{% block pageTitle%}
+  All Users
+{% endblock %}
+
+{% block content%}
+
+<a href="users/create" class="btn btn-secondary">Create  New User</a>
+
+  <table border="1" class="table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>Actions</th>
+    </tr>
+
+    {% for user in users %}        
+    <tr>
+        <td>{{user[2]}}</td>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[3]}}</td>
+        <td>{{user[4]}}</td>
+        <td>{{user[5]}}</td>
+        <td>
+            <a href="users/{{user[2]}}/view" class="btn btn-primary">View</a>
+            <a href="users/{{user[2]}}/edit"class="btn btn-success">Edit</a>
+            <a href="users/{{user[2]}}/delete" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+    {% endfor %}
+
+  </table>
+  
+{% endblock %}

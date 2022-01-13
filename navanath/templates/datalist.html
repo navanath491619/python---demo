@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Employee::List
+{% endblock %}
+
+{% block header %}
+    Employee List
+{% endblock %}
+
+{% block content %}
+<a href="data/create">create</a>
+
+{% for employee in employees %}
+<h3>{{employee}}</h3>
+
+<a href="data/{{employee.employee_id}}">view</a>
+<a href="data/{{employee.employee_id}}/update">update</a>
+<a href="data/{{employee.employee_id}}/delete">delete</a>
+<hr>
+{% endfor %}
+{% endblock %}

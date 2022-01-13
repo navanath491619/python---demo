@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Employee:: update
+{% endblock %}
+
+{% block header %}
+    Employee update
+{% endblock %}
+
+{% block content %}
+
+<div class="w3-container w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">UPDATE</h3>
+  <form action="" method="POST">
+    <input class="w3-input w3-border" type="integer" name="employee_id" value="{{employee.id}}" placeholder="Employee ID">
+    <input class="w3-input w3-section w3-border" type="text" name="name"value="{{employee.name}}" placeholder="Name">
+    <input class="w3-input w3-section w3-border" type="integer" name="age"value="{{employee.age}}" placeholder="Age">
+    <input class="w3-input w3-section w3-border" type="text" name="number" value="{{employee.mobile}}"placeholder="mobile">
+    <button class="w3-button w3-black w3-section" type="update">
+      <i class="fa fa-paper-plane"></i> UPDATE
+    </button>
+  </form>
+</div>
+
+{% endblock %}

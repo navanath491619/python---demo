@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Employee:: Create
+{% endblock %}
+
+{% block header %}
+    Employee Create
+{% endblock %}
+
+{% block content %}
+
+<div class="w3-container w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Create</h3>
+  <form action="" method="post">
+    <input class="w3-input w3-border" type="integer" name="employee_id" placeholder="Employee ID">
+    <input class="w3-input w3-section w3-border" type="text" name="name" placeholder="Name">
+    <input class="w3-input w3-section w3-border" type="integer" name="age" placeholder="Age">
+    <input class="w3-input w3-section w3-border" type="integer" name="mobile" placeholder="mobile">
+    <input class="w3-input w3-section w3-border" type="text" name="gender" placeholder="gender">
+    <input type="radio" name="gender" value="male" class="form-check-input" id="gender"> Male
+    <input type="radio" name="gender" value="Female" class="form-check-input" id="gender"> Female
+   <hr> <button class="w3-button w3-black w3-section" type="submit">
+     <div class="form-group form-check"> 
+      <i class="fa fa-paper-plane"></i> SUBMIT
+    </button>
+  </form>
+</div>
+{% endblock %}
